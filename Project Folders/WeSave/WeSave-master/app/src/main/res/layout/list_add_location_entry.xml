@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/entry"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/add_location_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/default_item_image" />
+
+    <RelativeLayout
+        android:id="@+id/add_location_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/add_location_icon"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/add_location_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:id="@+id/add_location_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_location_name"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="Smart Phone"
+            android:typeface="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

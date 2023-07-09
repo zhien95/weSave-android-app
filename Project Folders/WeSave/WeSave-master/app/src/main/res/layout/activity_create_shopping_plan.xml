@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addPlanButton"
+                android:background="@drawable/btn_back"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:text="CREATE PLAN" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="60dp">
+
+            <ExpandableListView
+                android:id="@+id/itemList"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:divider="@color/divider"
+                android:dividerHeight="2dp"
+                android:scrollingCache="false" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_feature"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_menu_categories"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_scan_barcode"
+            android:icon="@drawable/ic_menu_barcode"
+            android:width="30dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Scan Barcode" />
+        <item
+            android:id="@+id/Nearby"
+            android:icon="@drawable/ic_near_me_black_24dp"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Nearby" />
+
+        <item
+            android:id="@+id/nav_following_items"
+            android:icon="@drawable/ic_menu_following_items"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="My Following Items" />
+        <item
+            android:id="@+id/nav_shopping_plan"
+            android:icon="@drawable/ic_menu_shopping_basket"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="My Shopping Plans" />
+        <item
+            android:id="@+id/nav_contributions"
+            android:icon="@drawable/ic_profile"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="My Contributions" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_menu_notification"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Notifications" />
+    </group>
+
+    <group
+        android:id="@+id/group_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_feedback"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Send Feedback" />
+
+        <!--<item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Profile" />-->
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_menu_password"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_menu_preferences"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Preferences" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportHeight="24.0"
+            android:viewportWidth="24.0"
+            android:title="Logout" />
+    </group>
+
+</menu>

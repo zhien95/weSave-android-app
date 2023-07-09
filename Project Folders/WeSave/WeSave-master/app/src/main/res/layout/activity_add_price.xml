@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/pricing"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/storeSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:hint="Select a store"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_underline" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/originalPrice"
+                android:inputType="numberDecimal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_underline"
+                android:hint="Original price" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- promotion -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                style="@style/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:text="Add Promotion" />
+
+            <Switch
+                android:id="@+id/promoSwitchButton"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/promoPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_text_underline"
+                android:hint="Promotion price"
+                android:inputType="numberDecimal"
+                android:maxLength="500"
+                android:maxLines="1"
+                android:minLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLength="500"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:text="Quantity"
+                    android:textColor="@color/Gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:layout_gravity="right">
+
+                    <Button
+                        android:id="@+id/decrementBtn"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:padding="0dp"
+                        android:textColor="@android:color/black"
+                        android:background="@null"
+                        android:textStyle="bold"
+                        android:text="—" />
+
+                    <EditText
+                        android:id="@+id/quantity"
+                        android:layout_width="70dp"
+                        android:background="@android:color/white"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:inputType="number"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/incrementBtn"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:padding="0dp"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/black"
+                        android:background="@null"
+                        android:text="+" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/edit_text_underline"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text="From"
+                android:textColor="@color/Gray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/promoStartDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edit_text_underline"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_navigate_next_black" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text="To"
+                android:textColor="@color/Gray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/promoEndDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edit_text_underline"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_navigate_next_black" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/Crimson"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/addPriceButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_back_blue"
+                android:text="ADD"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_back"
+                android:text="BACK"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

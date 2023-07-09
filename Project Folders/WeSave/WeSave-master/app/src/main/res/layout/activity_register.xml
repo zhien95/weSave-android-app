@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/signUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColorHint="@color/Black"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="17sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/signUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="@color/Black"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="17sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/signUpCfmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/Black"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="17sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Crimson"
+            android:text="username available"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_forgot_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_back_blue"
+            android:text="Create My Account"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</ScrollView>

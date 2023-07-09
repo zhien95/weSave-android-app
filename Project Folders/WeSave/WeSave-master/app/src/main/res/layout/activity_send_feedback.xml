@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/rate_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please rate your experience with this app!"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rate_me"
+            android:layout_marginTop="10dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/White"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="20"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:textColorHint="@color/LightGrey"
+            android:hint="What's on your mind? (*)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:text="Please provide us your email address."
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/feedback_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="top"
+            android:maxLength="500"
+            android:minLines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/submit"
+            android:background="@drawable/btn_back_blue"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Submit" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/back"
+            android:background="@drawable/btn_back"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Back" />
+    </LinearLayout>
+</ScrollView>

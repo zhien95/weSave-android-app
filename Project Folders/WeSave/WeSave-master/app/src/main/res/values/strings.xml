@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">WeSave</string>
+    <string name="app_name_all_cap">WESAVE</string>
+
+    <!--<string name="facebook_app_id">1766488950266912</string>-->
+    <!--  <string name="facebook_app_id">347870592352538</string>-->
+    <string name="fb_login_protocol_scheme">fb347870592352538</string>
+    <string name="facebook_app_id_2">151723318695543</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    /*page title*/
+    <string name="title_scan_barcode">SCAN BARCODE</string>
+    <string name="title_categories">CATEGORIES</string>
+    <string name="title_subcategories">SUBCATEGORIES</string>
+    <string name="title_further_subcategories">SUB-SUBCATEGORIES</string>
+    <string name="title_following_items">MY FOLLOWING ITEMS</string>
+    <string name="title_my_plans">MY SHOPPING PLANS</string>
+    <string name="title_shopping_plan">SHOPPING PLAN</string>
+    <string name="title_contribution">MY CONTRIBUTIONS</string>
+    <string name="title_feedback">FEEDBACK</string>
+    <string name="title_pricing">PRICING</string>
+    <string name="title_search_item">SEARCH ITEM</string>
+    <string name="title_search_result">SEARCH RESULTS</string>
+    <string name="title_search_store">SEARCH STORE</string>
+    <string name="title_create_item">CREATE NEW ITEM</string>
+    <string name="title_create_shopping_plan">CREATE SHOPPING PLAN</string>
+    <string name="title_change_password">CHANGE PASSWORD</string>
+    <string name="title_no_match">NO MATCH FOUND</string>
+    <string name="title_add_price">ADD PRICING</string>
+    <string name="title_add_location">ADD LOCATION</string>
+    <string name="title_notification">NOTIFICATION</string>title_likes
+    <string name="title_likes">LIKES</string>
+    <string name="title_follows">FOLLOWERS</string>
+    <string name="title_preferences">PREFERENCES</string>
+    <string name="title_supermarket">SUPERMARKET</string>
+
+    /*content*/
+    <string name="no_match_found_content">Sorry the item is not added in our database. \nHelp our community to add it into our database.</string>
+    <string name="no_following_item">There is no item yet.</string>
+
+    /*buttons*/
+    <string name="Unfollow">Unfollow</string>
+    <string name="Follow">Follow</string>
+    <string name="Like">Like</string>
+    <string name="Unlike">Unlike</string>
+
+    /*login*/
+
+
+    /*drop down*/
+    <string name="facebook_app_id">1561302887348165</string>
+    <string name="facebook_login_protocol_schema">fb1561302887348165</string>
+
+    /*Fingerprint*/
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+
+    /*Search options*/
+    <string name="title_activity_test_search">TestSearchActivity</string>
+    <string name="search_items">Search Items</string>
+
+
+    /*distance options*/
+    <string name="title_activity_maps">Map</string>
+    <string-array name="searchOptions">
+        <item>By Popularity</item>
+        <item>By Keyword</item>
+        <item>By Distance</item>
+    </string-array>
+    <string-array name="distanceOptions">
+        <item> Within 1KM</item>
+        <item>1KM - 2KM</item>
+        <item>Beyond 2KM</item>
+    </string-array>
+</resources>

@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="contentText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="titleText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="LoginAppTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="subTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="pricingBottomText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/DimGray</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+    <style name="pricingText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="pricingTextPromotion" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/Crimson</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="pricingTextPromotionDetails" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/DarkGray</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="NoActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_add_photo"
+                android:id="@+id/image"
+                android:clickable="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Item Name" />
+
+            <EditText
+                android:id="@+id/itemNameEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:textSize="17sp" />
+
+            <TextView
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info" />
+
+            <EditText
+                android:id="@+id/itemWeightEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text"
+                android:gravity="top"
+                android:maxLength="500"
+                android:minLines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:textSize="17sp" />
+
+            <TextView
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/itemCategory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:focusable="false"
+                    android:textColor="@color/Gray" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_navigate_next_black" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subcategory" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/itemSubcategory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:focusable="false"
+                    android:textColor="@color/Gray" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_navigate_next_black" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Further Subcategory" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/itemThirdCategory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text"
+                    android:gravity="top"
+                    android:maxLength="500"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:focusable="false"
+                    android:textColor="@color/Gray" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_navigate_next_black" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/Crimson"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/submitButton"
+                android:background="@drawable/btn_back_blue"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:text="ADD ITEM" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cancelbtn"
+                android:background="@drawable/btn_back"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:text="CANCEL" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
